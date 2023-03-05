@@ -1,0 +1,169 @@
+Java Try With Resource
+Java Records
+Java stream().map()
+
+@Bean
+@Configuration
+
+@Autowired
+
+Dependency Injection
+	- Fields Injection 
+	- Setters Injection
+	- Constructor Injection (Recommended)
+
+@PostConstruct
+@PreDestroy
+
+Stereotype Annotation replacing @Components
+	- @Service
+	- @Controller
+	- @Repository
+
+@SpringBootApplication
+
+@RestController
+@RequestMapping
+@PostMapping
+@GetMapping
+@PutMapping
+@DeleteMapping
+
+@PathVariable
+@RequestParam
+
+@RequestBody
+
+ResponseEntity<>
+
+## Exception Handling ##
+
+@ResponseStatus with custom exception class
+
+@ControllerAdvice
+@RestControllerAdvice
+
+@ExceptionHandler
+
+ResponseEntityExceptionHandler class for different @Override methods
+	e.g., @Override protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatusCode status, WebRequest request) { ... }
+
+## Starter Validation ##
+
+@Valid
+@Future
+@Size
+@Min
+@Max
+@NotBlank
+@Email etc.
+
+## Spring Data JPA ##
+
+interface someRepo extends JpaRepository<> { ..additionalCustomQueryMethods }
+
+@Repository
+@Entity
+@Id
+@Column
+@GeneratedValue
+
+@OneToOne
+@OneToMany
+@ManyToOne
+@ManyToMany
+
+Custom Query Methods & @Query
+
+## Spring Data MongoDb ##
+
+interface someRepo extends MongoRepository<> { ...queryMethods }
+
+@Reposiory
+@Document
+@MongoId
+@Field
+
+@DbRef
+
+Custom Query Methods & @Query
+
+
+## Security ##
+
+@Configuration
+@Bean
+
+InMemoryUserDetailsManager
+Authentication & SecurityContextHolder.getContext()
+
+{
+	spring.security.user.name = root
+	spring.security.user.password = root
+}
+
+CORS POLICY -
+    @Bean //can be in @SpringBootApplication annotated class 
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurer() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/**")
+                        .allowedMethods("*")
+                        .allowedOrigins("http://localhost:3000");
+            }
+        };
+    }
+		
+    &	
+
+	http.authorizeHttpRequests(
+                auth -> auth
+                        .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
+                        .anyRequest().authenticated() 
+	);
+
+	http..sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+
+
+
+NOTE:-
+
+SecurityFilterChain
+PasswordEncoder
+UserDetailService
+UserDetails
+AuthenticationProvider
+AuthenticationManager
+SecurityContextHolder & SecurityContext
+
+----->  Authentication Filter  <---->  Authentication Manager <-----> Authentication Provider  <------> UserDetailsService    <========>    DataBase
+        |
+	  |
+	  |----->  Security Context
+
+
+
+SAVING USER CREDENTIALS IN DATABASE & JWT BASED AUTHENTICATION :-
+	https://github.com/TheWeKi/login-rest-api
+
+
+
+## Additional Contents ##
+
+Actuator
+
+Swagger UI and Open API Documentation
+Content Negotiation - JSON & XML Request and Response Body
+Versioning (URL, RequestParam, Header, MediaType)
+JSON HAL using HATEOAS and HAL Explorer
+
+Filtering (Serialization & De-Serialization) -
+	@JsonIgnore
+	@JsonFormat
+
+
+## EXTRA ##
+
+Logging To Databse - https://github.com/TheWeKi/LoggingToDatabse
+
