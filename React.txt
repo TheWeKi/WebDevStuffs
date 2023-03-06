@@ -1,0 +1,71 @@
+Virtual DOM
+JSX
+File Structure
+
+Function Component
+Props
+
+setTimeout and setInterval
+
+State - useState
+
+Event Handling - onChange, onSubmit, onClick etc.
+
+Conditional Rendering - ?: or && operator
+
+List and Keys - map() and key attribute
+
+Form - Controlled Components, preventDefault
+
+Context API - createContext, useContext, Provider, Consumer 
+
+Hooks API - useEffect etc. (https://reactjs.org/docs/hooks-reference.html)
+
+
+## React Hook Form & YUP Validation##
+
+const schema = yup.object().shape({
+    username: yup.string().min(4).max(16).required('User Id is required'),
+    password: yup.string().min(4).max(32).required('Password is required')
+})
+& (IN COMPONENT)
+const { register, handleSubmit, formState: {errors}, reset} = useForm({
+        resolver: yupResolver(schema)
+});
+& (IN JSX)
+<form onSubmit={handleSubmit(onSubmitHandler)}> // onSubmitHandler is a method 
+       <div>
+       	<label htmlFor="username">User ID</label>
+            <input type="text" name="username" placeholder="User Id" {...register('username')} />
+            <p> {errors.username?.message} </p>
+       </div>
+
+       <div>
+            <label htmlFor="password">Password</label>
+            <input type="password" name="password" placeholder="Password" {...register('password')} />
+        	<p> {errors.password?.message} </p>
+       </div>
+                                        
+	<button type="submit">Login</button>
+</form>
+
+## React Router DOM ##
+
+BrowserRouter, Routes, Route, Link
+Navigate, useNavigate() 
+
+## Axios ##
+
+create(), interceptors
+post(), delete(), get(), put()
+
+## React Redux & ToolKit ##
+
+configureStore()
+Provider
+createSlice()
+Reducers & Actions
+
+useDispatch()
+useSelector()
+
