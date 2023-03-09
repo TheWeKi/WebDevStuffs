@@ -123,7 +123,7 @@ CORS POLICY -
                         .anyRequest().authenticated() 
 	);
 
-	http..sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+	http.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
 
 
