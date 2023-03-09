@@ -60,7 +60,7 @@ ResponseEntityExceptionHandler class for different @Override methods
 
 ## Spring Data JPA ##
 
-interface someRepo extends JpaRepository<> { ..additionalCustomQueryMethods }
+interface someRepo extends JpaRepository<> { ...additionalCustomQueryMethods }
 
 @Repository
 @Entity
