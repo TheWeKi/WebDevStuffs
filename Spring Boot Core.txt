@@ -79,7 +79,7 @@ Custom Query Methods & @Query
 
 interface someRepo extends MongoRepository<> { ...queryMethods }
 
-@Reposiory
+@Repository
 @Document
 @MongoId
 @Field
