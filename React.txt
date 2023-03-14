@@ -61,7 +61,7 @@ post(), delete(), get(), put()
 
 ## React Redux & ToolKit ##
 
-((https://github.com/TheWeKi/React-Redux-Basics))
+(https://github.com/TheWeKi/React-Redux-Basics)
 
 configureStore()
 Provider
