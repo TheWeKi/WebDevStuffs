@@ -652,7 +652,7 @@ e.g.,
     }
 
 
-Take help of oogle to find methods for each exceptions...
+Take help of google to find methods for each exceptions...
 
 @Size(min=2, message="At least 2 characters")
 private String name;
