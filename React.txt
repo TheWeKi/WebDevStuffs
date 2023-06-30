@@ -15,7 +15,8 @@ Conditional Rendering - ?: or && operator
 
 List and Keys - map() and key attribute
 
-value?.name meaning
+Optional Chaining(?)
+Nullish Coalescing(??)
 
 Form - Controlled Components, preventDefault
 
