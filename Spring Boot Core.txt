@@ -88,6 +88,8 @@ interface someRepo extends MongoRepository<> { ...queryMethods }
 
 @DbRef
 
+@Transient
+
 Custom Query Methods & @Query
 
 
