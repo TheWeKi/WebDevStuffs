@@ -73,6 +73,8 @@ interface someRepo extends JpaRepository<> { ...additionalCustomQueryMethods }
 @ManyToOne
 @ManyToMany
 
+@Transient
+
 Custom Query Methods & @Query
 
 ## Spring Data MongoDb ##
