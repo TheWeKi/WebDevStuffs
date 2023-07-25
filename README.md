@@ -11,7 +11,7 @@ https://youtube.com/playlist?list=PL82C6-O4XrHfX-kHudgC4cPfMy6QPaF-H
 
 https://youtube.com/playlist?list=PL82C6-O4XrHe3sDCodw31GjXbwRdCyyuY
 
-# REACT.JS
+# REACT
 
 https://youtube.com/playlist?list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR
 
