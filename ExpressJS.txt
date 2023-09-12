@@ -1,0 +1,80 @@
+Hello World
+
+Routing
+
+HTTP METHODS
+
+URL Bindings
+
+Middleware
+
+Templating
+
+Static Files
+
+Form Data
+
+Database
+
+Cookies
+
+Sessions
+
+Authentications
+
+RESTful APIs
+
+Scaffolding
+
+Error Handling
+
+Debugging
+
+Best Practices
+
+######################################################################################################################################################
+
+
+This chapter lists down the various resources we used for this tutorial.
+
+The most important link is of course the Express API docs − https://expressjs.com/en/4x/api.html
+
+The guides provided on the Express website on different aspects are also quite helpful −
+
+Routing - https://expressjs.com/en/guide/routing.html
+
+Middleware - https://expressjs.com/en/guide/writing-middleware.html
+
+Error Handling - https://expressjs.com/en/guide/error-handling.html
+
+Debugging - https://expressjs.com/en/guide/debugging.html
+
+A list of useful books and blogs on Express is available at https://expressjs.com/en/resources/books-blogs.html
+
+A list of mostly used middleware with Express is available at https://expressjs.com/en/resources/middleware.html
+
+These blogs with Express tips and tricks may prove helpful −
+
+https://derickbailey.com/categories/tips-and-tricks/
+
+https://scotch.io/tutorials/learn-to-use-the-new-router-in+-expressjs-4
+
+Application structure − https://www.terlici.com/2014/08/25/best-practices-express-structure.html
+
+RESTful APIs −
+
+https://www.thepolyglotdeveloper.com/2015/10/create-a-simple-restful-api-with-node-js/
+
+https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
+
+https://devcenter.heroku.com/articles/mean-apps-restful-api
+
+https://pixelhandler.com/posts/develop-a-restful-api-using-nodejs-with-express-and-mongoose
+
+http://cwbuecheler.com/web/tutorials/2014/restful-web-app-node-express-mongodb/
+
+For advanced authentication, use PassportJS − http://passportjs.org
+
+
+##########################################
+##########################################
